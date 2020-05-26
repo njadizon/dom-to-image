@@ -19,6 +19,7 @@
         toPng: toPng,
         toJpeg: toJpeg,
         toBlob: toBlob,
+	toCanvas: toCanvas,
         toPixelData: toPixelData,
         impl: {
             fontFaces: fontFaces,
