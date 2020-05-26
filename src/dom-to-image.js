@@ -122,6 +122,18 @@
                 return canvas.toDataURL('image/jpeg', options.quality || 1.0);
             });
     }
+	
+    function toCanvas(node, options) {
+    	options = options || {};
+	return draw(node, options)
+	    .then(function (canvas) {
+		return canvas;
+	    });
+    }
+	
+    function toJpegFile(canvas) {
+    	return return canvas.toDataURL('image/jpeg', options.quality || 1.0);
+    }
 
     /**
      * @param {Node} node - The DOM Node object to render
