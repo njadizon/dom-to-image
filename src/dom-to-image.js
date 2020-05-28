@@ -132,7 +132,6 @@
     function toCanvas(node, options) {
     	options = options || {};
 	return draw(node, options)
-	    .then(applyOptions)
 	    .then(function (canvas) {
 		if (options.style)
                 Object.keys(options.style).forEach(function (property) {
